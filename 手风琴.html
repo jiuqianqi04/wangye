@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+.box {
+      display: flex;
+      overflow: hidden;
+      width: 1120px;
+      height: 260px;
+      margin: 50px auto;
+    }
+
+    .box>div {
+      width: 1200px;
+      border: 1px solid #fff;
+      transition: all 0.5s;
+    }
+
+    .box>div:active {
+      width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+<script>
+  let arr=[
+    '../笔记/01-js基础/js基础/JavaScript基础-day03/04-素材/images/1.jpg',
+    '../笔记/01-js基础/js基础/JavaScript基础-day03/04-素材/images/2.jpg',
+    '../笔记/01-js基础/js基础/JavaScript基础-day03/04-素材/images/3.jpg',
+    '../笔记/01-js基础/js基础/JavaScript基础-day03/04-素材/images/4.jpg',
+    '../笔记/01-js基础/js基础/JavaScript基础-day03/04-素材/images/5.jpg',
+    '../笔记/01-js基础/js基础/JavaScript基础-day03/04-素材/images/6.jpg',
+    '../笔记/01-js基础/js基础/JavaScript基础-day03/04-素材/images/7.jpg',
+   
+  ]
+  let str = ''
+  for(let i=0;i<arr.length;i++){
+    // console.log(`<div><img src="${arr[i]}" alt=""></div>`);
+      str+=`<div class="box"><img src="${arr[i]}" alt=""></div>`
+  }
+    console.log(str);
+    document.write(`<div class="box">${str}<div>`)
+</script>
+  </div>
+</body>
+
+</html>
